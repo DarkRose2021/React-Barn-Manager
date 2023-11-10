@@ -1,0 +1,38 @@
+$black: #2A2A2A;
+$bg: #B8D0A1;
+$yellow: #f4e285ff;
+$sandy-brown: #f4a259ff;
+$bittersweet-shimmer: #bc4b51ff;
+$green: #8CB369;
+$color: #e5e5e5;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@mixin boarderRadius {
+	border-radius: 5px;
+}
+
+@mixin flex-center {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+body {
+	background-color: $bg;
+}
+
+.pending {
+	background-color: $bg;
+	@include boarderRadius();
+}
+
+.active {
+	background-color: #739456;
+    color: $color;
+	@include boarderRadius();
+}
+
+h1, h2{
+    text-align: center;
+}

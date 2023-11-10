@@ -1,0 +1,113 @@
+@import "./index.scss";
+
+.navbar {
+	background-color: $green;
+}
+
+.nav-link {
+	display: block;
+	padding: 0.5rem 1rem;
+	text-decoration: none;
+	color: black;
+}
+
+.nav-link:hover {
+	color: $color;
+}
+
+.form {
+	margin: 2%;
+	@include flex-center();
+	div {
+		background-color: #5b8e7d;
+		width: 315px;
+		padding: 1%;
+		@include boarderRadius();
+		button {
+			background-color: $yellow;
+			margin: 2%;
+			padding: 1%;
+			border: #caba6e 2px solid;
+			text-align: center;
+			width: 100%;
+			@include boarderRadius();
+			font-size: 1em;
+			font-weight: bold;
+			cursor: pointer;
+		}
+		button:hover {
+			background-color: #caba6e;
+		}
+			label {
+				margin: 1%;
+				font-size: 1.3em;
+				font-weight: bolder;
+			}
+			// taken from w3schools gets rid of the up down buttons on the inputs
+			/* Chrome, Safari, Edge, Opera */
+			input::-webkit-outer-spin-button,
+			input::-webkit-inner-spin-button {
+				-webkit-appearance: none;
+				margin: 0;
+			}
+
+			/* Firefox */
+			input[type=number] {
+				-moz-appearance: textfield;
+			}
+			input[type=radio]{
+				accent-color: $sandy-brown
+			}
+
+			input {
+				background-color: #4b7568;
+				margin: 1%;
+				width: 100%;
+				border: #446a5f 2px solid;
+				@include boarderRadius();
+				font-size: 1em;
+				font-weight: bold;
+				// color: $color;
+			}
+			input:focus {
+				outline: $sandy-brown 3px solid;
+			}
+			div {
+				width: 100%;
+			}
+			input[type=radio] {
+				width: fit-content;
+			}
+	}
+}
+
+.horses {
+	margin-left: 5%;
+	.horseCard {
+		display: inline-flex;
+		flex-wrap: wrap;
+		margin: 1%;
+		padding: 1%;
+		.horse {
+			background-color: #667859;
+			padding: 5%;
+			@include boarderRadius();
+			width: 300px;
+			h4 {
+				color: $black;
+				text-align: center;
+				font-weight: bold;
+			}
+			h5 {
+				color: $yellow;
+			}
+			a {
+				color: $black;
+				margin: 15%;
+			}
+			a:hover {
+				color: black;
+			}
+		}
+	}
+}
